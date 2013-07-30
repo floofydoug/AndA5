@@ -2,20 +2,21 @@
   <%= simple_form_for resource, :as => resource_name, :url => registration_path(resource_name) , :html => {:class => 'form-horizontal' } do |f| %>
     <div class="modal-header">
       <a class="close" data-dismiss="modal">&#215;</a>
-      <h3>Request Invitation</h3>
+      <h3 class="dark">Request Invitation</h3>
     </div>
     <div class="modal-body">
       <%= f.error_notification %>
+      <p class="dark"> We are still building all the functionalities for AndA5. Once Beta starts, we'll go through these requests and add dancers incrementally. You might even get some pretty cool bonus points from us for showing us love early. </p> 
       <%= f.input :email, :placeholder => 'user@example.com' %>
     </div>
     <div class="modal-footer">
-      <%= f.submit "Request Invitation", :class => "btn btn-primary", :id => 'invitation_button' %>
+      <%= f.submit "Request Invitation", :class => "btn btn-primary", :id => 'invitation_button', :style => "font-family: Aldrich, Sans-Serif;" %>
       <a class="btn" data-dismiss="modal" href="#">Close</a>
     </div>
   <% end %>
 </div>
 <div id="romance-copy" style="text-align: center; margin-top: 80px">
-  <h2>Want in?</h2>
+  <h2>Join The Dance Community</h2>
 </div>
 <div id="call-to-action" style="text-align: center; margin-top: 80px">
   <a class="btn btn-primary btn-large" data-toggle="modal" href="#request-invite">Request invite</a>
